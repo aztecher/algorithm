@@ -1,4 +1,4 @@
-pub fn insertion_sort<T: Ord + Copy + std::fmt::Debug>(input: &mut [T]) {
+pub fn insertion_sort<T: Ord + Copy>(input: &mut [T]) {
     for j in 1..input.len() {
         let key = input[j];
         // 'i' will be decremented in while loop and 'i' can be '-1' value in this loop.
