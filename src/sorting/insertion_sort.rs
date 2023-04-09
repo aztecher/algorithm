@@ -79,9 +79,7 @@ mod tests {
     #[test]
     fn basic() {
         let mut arr: [&str; 4] = ["d", "a", "c", "b"];
-        println!("before = {:?}", arr);
         insertion_sort(&mut arr);
-        println!("after = {:?}", arr);
         assert!(is_sorted(&arr));
     }
 
